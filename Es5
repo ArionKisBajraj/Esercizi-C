@@ -1,0 +1,23 @@
+#include <stdio.h>
+int main(int argc, char *argv[])
+{
+    int a,b,c, diff, contatoreA, contatoreB, contatoreC;
+    do
+    {
+    printf("Inserisci il valore di a");
+    scanf("%d", &a);
+    printf("Inserisci il valore di b");
+    scanf("%d", &b);
+    printf("Inserisci il valore di c");
+    scanf("%d", &c);
+    diff=a-b;
+    if(diff%2==0)
+        contatoreB++;
+    else if(diff==0)  
+        contatoreB++;
+    else
+        contatoreC++;
+    }while(a+b<c);
+    return 0;
+
+}
