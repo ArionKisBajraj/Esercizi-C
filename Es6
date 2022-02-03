@@ -1,0 +1,21 @@
+#include <stdio.h>
+int main(int argc, char *argv[])
+{
+    int a,b,contatore,valore,;
+    double media=0;
+    do{
+    printf("Inserisci il valore di a")
+    scanf("%d", &a);
+    printf("Inserisci il valore di b");
+    scanf("%d", &b);
+    }while(a<b)
+    do
+    {
+    printf("Inserisci dei valori (se A<B si esce dal programma) ")
+    scanf("%d",&valore);
+    media=media+valore;
+    contatore++;
+    }while(valore<b&&valore>a);
+    media=media/contatore;
+    printf("%d",&media);
+}
