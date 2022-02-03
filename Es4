@@ -6,7 +6,7 @@ int main(int argc, char* argv[])
     do
     {
         printf("Inserisci valore di a");
-        scanf("%lf", &a);
+        scanf("%lf", &a); // il comando %lf è usato per stampare i valori di tipo double
         printf("Inserisci valore di b");
         scanf("%lf", &b);
         if (a < b)
@@ -16,11 +16,11 @@ int main(int argc, char* argv[])
         if (div > 0)
         {
             rad = sqrt(div);
-            printf("La radice vale %f\n\n", rad);
+            printf("La radice vale %f\n\n", rad); // il comando %f viene usato per i valori float (numeri interi e frazioni)
         }
     }
     while (div > 0);
-    printf("Non é possibile fare la radice di un numero negativo\n\n");
+    printf("Non é possibile fare la radice di un numero negativo\n\n"); // il comando \n serve a creare una nuova linea
 
     return 0;
 }
